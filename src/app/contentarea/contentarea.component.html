@@ -1,0 +1,31 @@
+<section id="showcase">
+    <div class="container">
+    <h1 class="page-title">Subjects Topics</h1>
+        <ul id="subjects">
+            <li *ngFor = "let i of newService.Item; let ind = index">
+              <div>
+                  <h3>{{i.chapter}}</h3>
+              </div>
+              <div>
+                  <h5>{{i.week}}</h5>
+              </div>
+              {{i.content}}
+            </li>
+          </ul>
+    </div>
+</section>
+
+<section id="ratingsystem">
+    <div class="container">
+        <h1>Rate this course</h1>
+        <form>
+            <select (change)="selectchangehandler($event)">
+                <option value="verygood">Very Good</option>
+                <option value="good">Good</option>
+                <option value="understood">Understood</option>
+                <option value="notunderstood">Not Understood</option>
+            </select>
+            <button type="submit" class="button_1" (click)="myevent()">Submit</button>
+        </form>
+    </div>
+</section>

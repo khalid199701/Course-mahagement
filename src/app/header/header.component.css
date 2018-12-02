@@ -1,0 +1,22 @@
+div{
+	background: #35434a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 30px;
+    
+    width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+
+div .highlight{
+	color: #a8491d;
+    font-weight: bold;
+    padding-left: 20px;
+}
+div{
+	font-family: Arial, Helvatica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}

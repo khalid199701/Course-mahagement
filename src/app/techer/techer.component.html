@@ -1,0 +1,24 @@
+<div class="main">
+  <h1>Item's List</h1>
+  <div class="addItem">
+      <input  [(ngModel)] = "newItem.chapter" placeholder="Chapter no." type="text" class = "chapter">
+      <input [(ngModel)] = "newItem.week"  placeholder="Week no" type="text" class = "week">
+      <textarea [(ngModel)] = "newItem.content" placeholder="Content" class="addText" (keyup.enter)="test()"></textarea>
+      <button class="btn btn-primary" (click) = "test()">Add</button>
+  </div>
+  <ul>
+      <li *ngFor = "let i of newService.Item; let ind = index">
+          <div>
+              <h3>{{i.chapter}}</h3><span (click) = "removeTest(ind)">x</span>
+          </div>
+          <div>
+              <h5>{{i.week}}</h5>
+          </div>
+          <p style="word-wrap: initial;">
+            {{i.content}}
+          </p>
+          
+          
+      </li>
+  </ul>
+</div>
